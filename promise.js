@@ -22,6 +22,20 @@ let lastName = function () {
     })
 }
 
-Promise.all([firstName(), middleMan(), lastName()]).then(res => console.log(res))
+Promise.all([firstName(), middleMan(), lastName()]).then(res => console.log(res));
 
-Promise.race([firstName(), middleMan(), lastName()]).then(res => console.log(res))
+Promise.race([firstName(), middleMan(), lastName()]).then(res => console.log(res));
+
+(async function () {
+
+    let names = await Promise.all([firstName(), middleMan(), lastName()])
+    console.log(names)
+
+})();
+
+(async function () {
+
+    let name = await Promise.race([firstName(), middleMan(), lastName()])
+    console.log(name)
+
+})();
