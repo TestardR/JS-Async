@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-/* const asyncFunction = function () {
+const asyncFunction = function () {
     return new Promise(function (resolve, reject) {
         setTimeout(function () {
             resolve('Romain')
@@ -13,9 +13,9 @@ const asyncFunc = async () => {
     return result
 }
 
-asyncFunc(); */
+asyncFunc();
 
-/* const swapiFilms = async function () {
+const swapiFilms = async function () {
     let url = "https://swapi.co/api/films/",
         filmsData = {},
         films = [];
@@ -26,9 +26,9 @@ asyncFunc(); */
     console.log(films)
 }
 
-swapiFilms() */
+swapiFilms()
 
-/* const moviePlanets = async function (movieNum) {
+const moviePlanets = async function (movieNum) {
     let url = 'https://swapi.co/api/films/';
     try {
         if(isNaN(movieNum)) {
@@ -47,4 +47,4 @@ swapiFilms() */
   
 }
 
-moviePlanets('RR') */
+moviePlanets('RR')
